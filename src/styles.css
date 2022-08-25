@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --sec-font-color: #758398;
+  --third-font-color: #82e6da;
+  --medium-font-size: 1.1rem;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(assets/fonts/inter/Inter-Regular.otf) format('opentype');
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #1a1a1b;
+}
