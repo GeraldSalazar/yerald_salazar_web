@@ -1,0 +1,28 @@
+<nav class="navbar flex">
+  <a href="">
+    <div>
+      <img
+        src="../../../../assets/images/nav-bar/logo.png"
+        alt="YSdevLogo"
+        srcset="" />
+    </div>
+  </a>
+  <ul
+    [ngClass]="{
+      'hide-nav': shiftMenu,
+      'show-menu': showMobileMenu
+    }"
+    class="navbar__links flex">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <a
+    *ngIf="shiftMenu"
+    (click)="toggleBarsMenu()"
+    type="button"
+    class="menu-bars">
+    <i class="fa-solid fa-bars"></i>
+  </a>
+</nav>
