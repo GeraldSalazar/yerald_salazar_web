@@ -2,12 +2,24 @@
 :root {
   --sec-font-color: #758398;
   --third-font-color: #82e6da;
+  --fourth-font-color: #18766b;
   --medium-font-size: 1.1rem;
+  --large-font-size: 2.2rem;
 }
 
 @font-face {
   font-family: inter;
   src: url(assets/fonts/inter/Inter-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(assets/fonts/playfair-display/PlayfairDisplay-Regular.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(assets/fonts/merriweather/merriweather/Merriweather-Regular.ttf)
+    format('opentype');
 }
 a {
   text-decoration: none;

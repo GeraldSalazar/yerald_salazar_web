@@ -1,0 +1,11 @@
+i {
+  color: var(--third-font-color);
+}
+p {
+  color: var(--sec-font-color);
+  font-family: Merriweather, serif;
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.75rem;
+  font-size: var(--medium-font-size);
+}

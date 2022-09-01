@@ -13,6 +13,11 @@
   font-family: 'inter', sans-serif;
   color: var(--sec-font-color);
 }
+
+.navbar .navbar__links li a.mobile-font-color {
+  color: #e0e0e0;
+}
+
 .navbar .navbar__links li a:hover {
   color: var(--third-font-color);
   position: relative;
@@ -52,7 +57,7 @@
   top: 25%;
   right: -50%;
   transition: right 0.15s linear;
-  background-color: #82e6da04;
+  background-color: #00665ae1;
   padding: 1rem 0;
 }
 

@@ -1,0 +1,20 @@
+.main-structure-margin {
+  margin: 0 10%;
+}
+
+.presentation-section {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.presentation-section .presentation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 50%;
+}
+
+.img-presentation {
+  display: flex;
+  justify-content: flex-end;
+}

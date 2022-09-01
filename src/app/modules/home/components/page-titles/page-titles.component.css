@@ -1,0 +1,25 @@
+p {
+  color: var(--sec-font-color);
+  font-size: var(--medium-font-size);
+  text-transform: uppercase;
+  line-height: 1.7;
+  font-family: Merriweather, serif;
+}
+
+h1 {
+  color: #e0e0e0;
+  line-height: 1.1;
+  font-weight: bolder;
+  font-size: 3.8rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  color: var(--fourth-font-color);
+  font-size: var(--large-font-size);
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  margin: 0.5rem;
+}
