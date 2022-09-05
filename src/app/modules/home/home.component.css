@@ -2,10 +2,16 @@
   margin: 0 10%;
 }
 
-.presentation-section {
+/* Shared Classes */
+.margin-5 {
   margin: 5%;
+}
+
+/* First Section. Presentation text and Main Presentation Image */
+.presentation-section {
   display: flex;
   justify-content: space-between;
+  height: 60vh;
 }
 .presentation-section .presentation-text {
   display: flex;
@@ -17,4 +23,10 @@
 .img-presentation {
   display: flex;
   justify-content: flex-end;
+}
+/* ---------------------------------------------------------- */
+
+/* Second Section. About me summary */
+.about-me-section {
+  height: 100vh;
 }

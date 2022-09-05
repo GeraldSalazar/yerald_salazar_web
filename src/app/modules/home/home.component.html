@@ -3,7 +3,7 @@
   class="main-structure">
   <app-nav-bar></app-nav-bar>
   <app-bg-circle-decoration></app-bg-circle-decoration>
-  <section class="presentation-section">
+  <section class="presentation-section margin-5">
     <div class="presentation-text">
       <app-page-titles></app-page-titles>
       <app-contact-info-summary></app-contact-info-summary>
@@ -12,5 +12,8 @@
       *ngIf="!mobileView"
       class="img-presentation"
       [imgName]="headerPresentationImage"></app-header-presentation-img>
+  </section>
+  <section class="about-me-section margin-5">
+    <app-about-me-summary></app-about-me-summary>
   </section>
 </main>

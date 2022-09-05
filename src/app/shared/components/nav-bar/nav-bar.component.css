@@ -9,9 +9,9 @@
 
 .navbar .navbar__links li a {
   text-transform: uppercase;
-  font-size: var(--medium-font-size);
+  font-size: var(--small-font-size);
   font-family: 'inter', sans-serif;
-  color: var(--sec-font-color);
+  color: var(--sec-color);
 }
 
 .navbar .navbar__links li a.mobile-font-color {
@@ -19,7 +19,7 @@
 }
 
 .navbar .navbar__links li a:hover {
-  color: var(--third-font-color);
+  color: var(--third-color);
   position: relative;
 }
 .navbar .navbar__links li a::before {
@@ -34,7 +34,7 @@
   height: 1px;
   width: 120%;
   opacity: 1;
-  background-color: var(--third-font-color);
+  background-color: var(--third-color);
 }
 
 .flex {
@@ -44,7 +44,7 @@
 
 /* Menu bars */
 .menu-bars i {
-  color: var(--sec-font-color);
+  color: var(--sec-color);
   padding: 1rem;
   font-size: 1.5rem;
   cursor: pointer;

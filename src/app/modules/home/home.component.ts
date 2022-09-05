@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   checkScreenBreakP() {
-    this.breakPointObs.observe([Breakpoints.XSmall]).subscribe(result => {
+    this.breakPointObs.observe(['(max-width: 800px)']).subscribe(result => {
       console.log(result);
       if (result.matches) {
         this.mobileView = true;

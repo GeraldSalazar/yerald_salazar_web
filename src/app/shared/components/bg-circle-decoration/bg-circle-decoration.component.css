@@ -1,6 +1,6 @@
 .bg-decoration {
   position: fixed;
-  background: var(--third-font-color);
+  background: var(--third-color);
   height: 50vw;
   width: 50vw;
   right: -17.5vw;
