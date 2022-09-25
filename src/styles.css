@@ -65,4 +65,7 @@ a {
 
 body {
   background-color: #1a1a1b;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

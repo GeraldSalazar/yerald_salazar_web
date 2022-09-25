@@ -30,3 +30,10 @@
 .about-me-section {
   height: 100vh;
 }
+
+/* Parallex Effect Section */
+.parallax-effect-section {
+  height: 100vh;
+  margin: 0 -12.5%;
+}
+/* ---------------------------------------------------------- */

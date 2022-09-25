@@ -5,6 +5,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { PageTitlesComponent } from './components/page-titles/page-titles.component';
 import { ContactInfoSummaryComponent } from './components/contact-info-summary/contact-info-summary.component';
 import { AboutMeSummaryComponent } from './components/about-me-summary/about-me-summary.component';
+import { ParallaxEffectComponent } from './components/parallax-effect/parallax-effect.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { AboutMeSummaryComponent } from './components/about-me-summary/about-me-
     PageTitlesComponent,
     ContactInfoSummaryComponent,
     AboutMeSummaryComponent,
+    ParallaxEffectComponent,
   ],
   imports: [CommonModule, SharedModule],
   exports: [HomeComponent],
