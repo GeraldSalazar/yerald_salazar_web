@@ -1,0 +1,11 @@
+.bg-decoration {
+  position: fixed;
+  background: var(--third-color);
+  height: 50vw;
+  width: 50vw;
+  right: -17.5vw;
+  top: -17.5vw;
+  border-radius: 50%;
+  opacity: 0.075;
+  z-index: -1;
+}

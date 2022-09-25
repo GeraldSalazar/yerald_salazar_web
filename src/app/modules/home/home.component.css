@@ -1,0 +1,39 @@
+.main-structure-margin {
+  margin: 0 10%;
+}
+
+/* Shared Classes */
+.margin-5 {
+  margin: 5%;
+}
+
+/* First Section. Presentation text and Main Presentation Image */
+.presentation-section {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+}
+.presentation-section .presentation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 50%;
+}
+
+.img-presentation {
+  display: flex;
+  justify-content: flex-end;
+}
+/* ---------------------------------------------------------- */
+
+/* Second Section. About me summary */
+.about-me-section {
+  height: 100vh;
+}
+
+/* Parallex Effect Section */
+.parallax-effect-section {
+  height: 100vh;
+  margin: 0 -12.5%;
+}
+/* ---------------------------------------------------------- */

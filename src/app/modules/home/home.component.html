@@ -1,1 +1,22 @@
-<app-nav-bar></app-nav-bar>
+<main
+  [ngClass]="{ 'main-structure-margin': !mobileView }"
+  class="main-structure">
+  <app-nav-bar></app-nav-bar>
+  <app-bg-circle-decoration></app-bg-circle-decoration>
+  <section class="presentation-section margin-5">
+    <div class="presentation-text">
+      <app-page-titles></app-page-titles>
+      <app-contact-info-summary></app-contact-info-summary>
+    </div>
+    <app-header-presentation-img
+      *ngIf="!mobileView"
+      class="img-presentation"
+      [imgName]="headerPresentationImage"></app-header-presentation-img>
+  </section>
+  <section class="about-me-section margin-5">
+    <app-about-me-summary></app-about-me-summary>
+  </section>
+  <section class="parallax-effect-section">
+    <app-parallax-effect></app-parallax-effect>
+  </section>
+</main>

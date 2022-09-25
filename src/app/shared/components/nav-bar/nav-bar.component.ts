@@ -19,7 +19,7 @@ export class NavBarComponent implements OnInit {
   }
 
   checkMenuBreakPoint() {
-    this.breakPointsObs.observe([Breakpoints.XSmall]).subscribe(result => {
+    this.breakPointsObs.observe(['(max-width: 800px)']).subscribe(result => {
       this.showMobileMenu = false;
       if (result.matches) {
         this.shiftMenu = true;

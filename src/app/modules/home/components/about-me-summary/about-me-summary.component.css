@@ -1,0 +1,31 @@
+.about-me-summary {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
+p {
+  line-height: 1.2;
+}
+
+@media only screen and (min-width: 800px) {
+  div.about-me-summary {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-areas: 'title title' 'descrip-1 descrip-1' 'subtitle descrip-2';
+  }
+  .title {
+    grid-area: title;
+  }
+  .subtitle {
+    grid-area: subtitle;
+  }
+  .descrip-1 {
+    grid-area: descrip-1;
+  }
+  .descrip-2 {
+    grid-area: descrip-2;
+  }
+}

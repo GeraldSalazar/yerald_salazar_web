@@ -1,13 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --sec-font-color: #758398;
-  --third-font-color: #82e6da;
-  --medium-font-size: 1.1rem;
+  --first-color: #18766b;
+  --sec-color: #758398;
+  --third-color: #82e6da;
+
+  --small-font-size: 1.2rem;
+  --medium-font-size: 1.6rem;
+  --large-font-size: 2.2rem;
+  --xlarge-font-size: 2.7rem;
+}
+/* Colors predefined classes */
+.parag-color {
+  color: var(--sec-color);
+}
+.title-color {
+  color: var(--first-color);
+}
+.accent-color {
+  color: var(--third-color);
+}
+
+/* Font size predefined classes */
+.fs-1 {
+  font-size: var(--xlarge-font-size);
+}
+.fs-2 {
+  font-size: var(--large-font-size);
+}
+.fs-3 {
+  font-size: var(--medium-font-size);
+}
+.fs-4 {
+  font-size: var(--small-font-size);
+}
+
+/* Font family predefined classes */
+.inter-font {
+  font-family: inter, sans-serif;
+}
+.merri-font {
+  font-family: Merriweather, sans-serif;
+}
+.playfair-font {
+  font-family: 'Playfair Display', serif;
 }
 
 @font-face {
   font-family: inter;
   src: url(assets/fonts/inter/Inter-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(assets/fonts/playfair-display/PlayfairDisplay-Regular.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(assets/fonts/merriweather/merriweather/Merriweather-Regular.ttf)
+    format('opentype');
 }
 a {
   text-decoration: none;
@@ -15,4 +65,7 @@ a {
 
 body {
   background-color: #1a1a1b;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
