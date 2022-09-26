@@ -3,6 +3,7 @@
   display: grid;
   align-items: center;
   align-content: center;
+  gap: 2%;
 }
 p {
   line-height: 1.2;
@@ -27,5 +28,6 @@ p {
   }
   .descrip-2 {
     grid-area: descrip-2;
+    text-align: justify;
   }
 }
