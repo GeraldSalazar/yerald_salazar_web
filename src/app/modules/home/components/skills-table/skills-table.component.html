@@ -1,0 +1,15 @@
+<h4 class="playfair-font">Skills & Technologies</h4>
+<table>
+  <thead class="inter-font">
+    <tr>
+      <th>Technology</th>
+      <th>Level</th>
+    </tr>
+  </thead>
+  <tbody class="inter-font">
+    <tr *ngFor="let skill of skillsToDisplay">
+      <td><i [ngClass]="[skill.icon]"></i>{{ skill.name }}</td>
+      <td>{{ skill.level | skillLevel }}</td>
+    </tr>
+  </tbody>
+</table>

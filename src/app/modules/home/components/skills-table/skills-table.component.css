@@ -1,0 +1,32 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--first-color);
+}
+
+th {
+  font-size: var(--small-font-size);
+  color: var(--sec-color);
+  padding: 1.5rem;
+}
+
+td {
+  padding: 0.75rem;
+  font-size: var(--small-font-size);
+  text-align: center;
+  color: var(--sec-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.064);
+}
+tr:last-child td {
+  border: 0;
+  padding-bottom: 1.5rem;
+}
+h4 {
+  font-size: var(--xlarge-font-size);
+  text-align: center;
+  color: var(--sec-color);
+}
+i {
+  margin: 0 0.2rem;
+}

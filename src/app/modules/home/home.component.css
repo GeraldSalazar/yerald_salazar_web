@@ -33,7 +33,9 @@
 
 /* Parallex Effect Section */
 .parallax-effect-section {
-  height: 100vh;
-  margin: 0 -12.5%;
+  height: 80vh;
 }
 /* ---------------------------------------------------------- */
+
+.skills-table-section {
+}

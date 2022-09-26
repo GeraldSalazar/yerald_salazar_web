@@ -6,6 +6,8 @@ import { PageTitlesComponent } from './components/page-titles/page-titles.compon
 import { ContactInfoSummaryComponent } from './components/contact-info-summary/contact-info-summary.component';
 import { AboutMeSummaryComponent } from './components/about-me-summary/about-me-summary.component';
 import { ParallaxEffectComponent } from './components/parallax-effect/parallax-effect.component';
+import { SkillsTableComponent } from './components/skills-table/skills-table.component';
+import { SkillLevelPipe } from './pipes/skills-table/skill-level.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ParallaxEffectComponent } from './components/parallax-effect/parallax-e
     ContactInfoSummaryComponent,
     AboutMeSummaryComponent,
     ParallaxEffectComponent,
+    SkillsTableComponent,
+    SkillLevelPipe,
   ],
   imports: [CommonModule, SharedModule],
   exports: [HomeComponent],
