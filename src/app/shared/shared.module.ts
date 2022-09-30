@@ -5,6 +5,7 @@ import { HeaderPresentationImgComponent } from './components/header-presentation
 import { BgCircleDecorationComponent } from './components/bg-circle-decoration/bg-circle-decoration.component';
 import { PortfolioPreviewComponent } from './components/portfolio-preview/portfolio-preview.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,14 @@ import { FooterComponent } from './components/footer/footer.component';
     PortfolioPreviewComponent,
     FooterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     NavBarComponent,
     HeaderPresentationImgComponent,
     BgCircleDecorationComponent,
     PortfolioPreviewComponent,
     FooterComponent,
+    RouterModule,
   ],
 })
 export class SharedModule {}

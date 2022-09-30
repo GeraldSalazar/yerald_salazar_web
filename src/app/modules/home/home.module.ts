@@ -8,6 +8,7 @@ import { AboutMeSummaryComponent } from './components/about-me-summary/about-me-
 import { ParallaxEffectComponent } from './components/parallax-effect/parallax-effect.component';
 import { SkillsTableComponent } from './components/skills-table/skills-table.component';
 import { SkillLevelPipe } from './pipes/skills-table/skill-level.pipe';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { SkillLevelPipe } from './pipes/skills-table/skill-level.pipe';
     SkillsTableComponent,
     SkillLevelPipe,
   ],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, HomeRoutingModule],
   exports: [HomeComponent],
 })
 export class HomeModule {}
