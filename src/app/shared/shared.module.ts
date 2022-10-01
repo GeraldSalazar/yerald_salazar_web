@@ -6,6 +6,7 @@ import { BgCircleDecorationComponent } from './components/bg-circle-decoration/b
 import { PortfolioPreviewComponent } from './components/portfolio-preview/portfolio-preview.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { TitleImgHeaderComponent } from './components/title-img-header/title-img-header.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
     BgCircleDecorationComponent,
     PortfolioPreviewComponent,
     FooterComponent,
+    TitleImgHeaderComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -23,6 +25,7 @@ import { RouterModule } from '@angular/router';
     PortfolioPreviewComponent,
     FooterComponent,
     RouterModule,
+    TitleImgHeaderComponent,
   ],
 })
 export class SharedModule {}
