@@ -5,6 +5,7 @@
 .navbar .navbar__links {
   list-style: none;
   gap: 2rem;
+  z-index: 1;
 }
 
 .navbar .navbar__links li a {

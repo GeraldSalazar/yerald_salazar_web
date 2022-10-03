@@ -1,0 +1,48 @@
+.project-detail-structure {
+  margin: 0 10%;
+}
+.videos-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.videos-section video {
+  max-width: 100%;
+  max-height: 100vh;
+}
+.images-section {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.images-section img {
+  margin: 1rem 0;
+  border-radius: 2px;
+  max-width: 100%;
+  height: auto;
+}
+.btn-to-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+.btn-to-top button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.43);
+  font-size: 2rem;
+  opacity: 0.75;
+  position: relative;
+  top: 0;
+  color: var(--sec-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-to-top button:hover {
+  position: relative;
+  top: -5px;
+  background-color: rgba(128, 128, 128, 0.15);
+}

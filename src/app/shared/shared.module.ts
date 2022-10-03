@@ -7,6 +7,7 @@ import { PortfolioPreviewComponent } from './components/portfolio-preview/portfo
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { TitleImgHeaderComponent } from './components/title-img-header/title-img-header.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TitleImgHeaderComponent } from './components/title-img-header/title-img
     PortfolioPreviewComponent,
     FooterComponent,
     TitleImgHeaderComponent,
+    CarruselComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
