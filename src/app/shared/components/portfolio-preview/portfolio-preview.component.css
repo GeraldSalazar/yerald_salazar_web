@@ -5,7 +5,10 @@
   grid-template-areas: 'title image' 'description image' 'button image' 'h-line h-line';
   justify-items: center;
   gap: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10%;
+}
+.project-item:first-child {
+  margin-top: 15%;
 }
 
 .project-title {
@@ -14,6 +17,7 @@
   margin: 0;
   font-weight: bolder;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 .project-description {
   grid-area: description;
@@ -29,6 +33,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 2px;
+  align-self: center;
 }
 .goto-project-btn {
   grid-area: button;
@@ -42,6 +47,7 @@ i {
   width: 100%;
   background-color: var(--sec-color);
   opacity: 0.1;
+  margin-top: 2.5rem;
 }
 
 @media only screen and (max-width: 800px) {

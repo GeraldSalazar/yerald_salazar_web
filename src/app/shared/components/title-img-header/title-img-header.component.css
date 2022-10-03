@@ -1,0 +1,22 @@
+.title-img-header {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  margin: 5%;
+}
+.screen-name {
+  min-width: 50%;
+  align-self: center;
+  font-size: 5rem;
+  position: relative;
+}
+.screen-name::before {
+  content: '';
+  border-top: 1px solid var(--sec-color);
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: 1;
+  height: 5px;
+  width: 25%;
+}

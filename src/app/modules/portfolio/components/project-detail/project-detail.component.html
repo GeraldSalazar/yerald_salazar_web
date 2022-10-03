@@ -1,0 +1,32 @@
+<div class="project-detail-structure">
+  <app-nav-bar></app-nav-bar>
+  <app-bg-circle-decoration></app-bg-circle-decoration>
+  <h1 class="parag-color fs-1">{{ project.name }}</h1>
+  <section>
+    <ul>
+      <li
+        *ngFor="let detail of project.details"
+        class="fs-4 parag-color merri-font">
+        {{ detail }}
+      </li>
+    </ul>
+  </section>
+  <section class="videos-section">
+    <video
+      *ngFor="let video of project.allVideos"
+      [src]="video"
+      controls></video>
+  </section>
+  <section class="images-section">
+    <img
+      *ngFor="let imgSrc of project.allImages"
+      alt="project image"
+      [src]="imgSrc" />
+  </section>
+  <section class="btn-to-top">
+    <button (click)="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </section>
+  <app-footer></app-footer>
+</div>

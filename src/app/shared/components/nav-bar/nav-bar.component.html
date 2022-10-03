@@ -13,15 +13,21 @@
       'show-menu': showMobileMenu
     }"
     class="navbar__links flex">
-    <li><a [ngClass]="{ 'mobile-font-color': shiftMenu }" href="#">Home</a></li>
     <li>
-      <a [ngClass]="{ 'mobile-font-color': shiftMenu }" href="#">About</a>
+      <a routerLink="/home" [ngClass]="{ 'mobile-font-color': shiftMenu }"
+        >Home</a
+      >
     </li>
     <li>
-      <a [ngClass]="{ 'mobile-font-color': shiftMenu }" href="#">Portfolio</a>
+      <a [ngClass]="{ 'mobile-font-color': shiftMenu }">About</a>
     </li>
     <li>
-      <a [ngClass]="{ 'mobile-font-color': shiftMenu }" href="#">Contact</a>
+      <a routerLink="/portfolio" [ngClass]="{ 'mobile-font-color': shiftMenu }"
+        >Portfolio</a
+      >
+    </li>
+    <li>
+      <a [ngClass]="{ 'mobile-font-color': shiftMenu }">Contact</a>
     </li>
   </ul>
   <a

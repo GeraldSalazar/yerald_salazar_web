@@ -10,7 +10,6 @@
     </div>
     <app-header-presentation-img
       *ngIf="!mobileView"
-      class="img-presentation"
       [imgName]="headerPresentationImage"></app-header-presentation-img>
   </section>
   <section class="about-me-section margin-5">
@@ -25,7 +24,7 @@
   <section class="portfolio-preview margin-5">
     <app-portfolio-preview></app-portfolio-preview>
   </section>
-  <section>
+  <section class="margin-5">
     <app-footer></app-footer>
   </section>
 </main>

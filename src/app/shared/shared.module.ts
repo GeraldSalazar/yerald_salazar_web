@@ -5,6 +5,9 @@ import { HeaderPresentationImgComponent } from './components/header-presentation
 import { BgCircleDecorationComponent } from './components/bg-circle-decoration/bg-circle-decoration.component';
 import { PortfolioPreviewComponent } from './components/portfolio-preview/portfolio-preview.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterModule } from '@angular/router';
+import { TitleImgHeaderComponent } from './components/title-img-header/title-img-header.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -13,14 +16,18 @@ import { FooterComponent } from './components/footer/footer.component';
     BgCircleDecorationComponent,
     PortfolioPreviewComponent,
     FooterComponent,
+    TitleImgHeaderComponent,
+    CarruselComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     NavBarComponent,
     HeaderPresentationImgComponent,
     BgCircleDecorationComponent,
     PortfolioPreviewComponent,
     FooterComponent,
+    RouterModule,
+    TitleImgHeaderComponent,
   ],
 })
 export class SharedModule {}

@@ -1,12 +1,14 @@
-<article *ngFor="let project of projectListToDisplay" class="project-item">
+<article
+  *ngFor="let project of projectListToDisplay; let i = index"
+  class="project-item">
   <h6 class="project-title fs-2 playfair-font">{{ project.name }}</h6>
   <p class="project-description inter-font">{{ project.description }}</p>
-  <a class="goto-project-btn" href="#"
+  <a class="goto-project-btn" [routerLink]="['/portfolio/project', i]"
     ><i class="fa-solid fa-arrow-right title-color"></i
   ></a>
   <img
     class="project-image"
-    src="assets/images/portfolio-preview/{{ project.image }}"
+    src="assets/images/portfolio-preview/{{ project.previewImage }}"
     alt="Project Image" />
   <div class="h-line"></div>
 </article>
