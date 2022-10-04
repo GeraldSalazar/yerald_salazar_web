@@ -14,6 +14,11 @@ const routes: Routes = [
         mod => mod.PortfolioModule
       ),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./modules/contact/contact.module').then(mod => mod.ContactModule),
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
