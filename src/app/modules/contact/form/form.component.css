@@ -6,7 +6,7 @@ form {
 }
 form label {
   color: var(--sec-color);
-  font-size: var(--medium-font-size);
+  font-size: var(--small-font-size);
 }
 form label::after {
   content: '*';
@@ -34,7 +34,10 @@ button {
   color: var(--sec-color);
   width: 50%;
 }
-button:hover {
+form.ng-valid button:hover {
   background-color: rgba(117, 131, 152, 0.25);
   cursor: pointer;
+}
+form.ng-invalid button {
+  cursor: not-allowed;
 }
