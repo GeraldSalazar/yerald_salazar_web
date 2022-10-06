@@ -6,6 +6,7 @@ import { ContactComponent } from './contact.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [ContactComponent, FormComponent],
@@ -14,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactRoutingModule,
     SharedModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   exports: [ContactComponent],
 })

@@ -10,7 +10,7 @@ form label {
 }
 form label::after {
   content: '*';
-  color: red;
+  color: rgba(255, 0, 0, 0.75);
 }
 
 form input {
