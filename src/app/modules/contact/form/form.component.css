@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+}
+form label {
+  color: var(--sec-color);
+  font-size: var(--medium-font-size);
+}
+form label::after {
+  content: '*';
+  color: red;
+}
+
+form input {
+  padding: 0.5rem;
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem;
+}
+form textarea {
+  padding: 0.5rem;
+  font-size: var(--small-font-size);
+  height: 25vh;
+  margin-bottom: 1rem;
+}

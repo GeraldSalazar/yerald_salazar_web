@@ -1,5 +1,11 @@
-<form>
+<form [formGroup]="contactForm">
   <label for="first-name">First Name</label>
-  <input type="text" id="first-name" [formControl]="firstName" />
-  <p>{{ firstName.value }}</p>
+  <input type="text" id="first-name" formControlName="firstName" />
+  <label for="last-name">Last Name</label>
+  <input type="text" id="last-name" formControlName="lastName" />
+
+  <label for="email">Email</label>
+  <input type="email" id="email" formControlName="email" />
+  <label for="message">Message</label>
+  <textarea type="text" id="message" formControlName="message"></textarea>
 </form>
