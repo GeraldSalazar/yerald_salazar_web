@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --first-color: #18766b;
-  --sec-color: #758398;
+  --sec-color: rgb(117, 131, 152);
   --third-color: #82e6da;
 
   --small-font-size: 1.2rem;

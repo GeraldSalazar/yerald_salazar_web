@@ -7,5 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderPresentationImgComponent {
   @Input() imgName = '';
+  @Input() imgWidth = '';
+  @Input() imgHeight = '';
   constructor() {}
 }

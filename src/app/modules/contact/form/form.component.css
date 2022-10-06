@@ -24,3 +24,17 @@ form textarea {
   height: 25vh;
   margin-bottom: 1rem;
 }
+button {
+  background-color: transparent;
+  border: 1px solid var(--sec-color);
+  font-size: var(--small-font-size);
+  padding: 0.5rem;
+  align-self: flex-end;
+  border-radius: 5px;
+  color: var(--sec-color);
+  width: 50%;
+}
+button:hover {
+  background-color: rgba(117, 131, 152, 0.25);
+  cursor: pointer;
+}
