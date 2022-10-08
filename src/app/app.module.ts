@@ -4,12 +4,19 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactModule } from './modules/contact/contact.module';
 import { HomeModule } from './modules/home/home.module';
 import { PortfolioModule } from './modules/portfolio/portfolio.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HomeModule, PortfolioModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HomeModule,
+    PortfolioModule,
+    ContactModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,20 @@
+<form [formGroup]="contactForm" (ngSubmit)="submitEmail(contactForm.value)">
+  <label for="first-name">First Name</label>
+  <input type="text" id="first-name" formControlName="firstName" />
+  <label for="last-name">Last Name</label>
+  <input type="text" id="last-name" formControlName="lastName" />
+
+  <label for="email">Email</label>
+  <input type="email" id="email" formControlName="email" />
+  <label for="message">Message</label>
+  <textarea type="text" id="message" formControlName="message"></textarea>
+  <button [disabled]="!contactForm.valid" type="submit">
+    Submit
+    <img
+      *ngIf="loadingFlag"
+      height="auto"
+      width="25"
+      src="../../../../assets/images/spinner.gif"
+      alt="Loading..." />
+  </button>
+</form>

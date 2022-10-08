@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+}
+form label {
+  color: var(--sec-color);
+  font-size: var(--small-font-size);
+}
+form label::after {
+  content: '*';
+  color: rgba(255, 0, 0, 0.75);
+}
+
+form input {
+  padding: 0.5rem;
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem;
+}
+form textarea {
+  padding: 0.5rem;
+  font-size: var(--small-font-size);
+  height: 25vh;
+  margin-bottom: 1rem;
+}
+button {
+  background-color: transparent;
+  border: 1px solid var(--sec-color);
+  font-size: var(--small-font-size);
+  padding: 0.5rem;
+  align-self: flex-end;
+  border-radius: 5px;
+  color: var(--sec-color);
+  width: 50%;
+}
+form.ng-valid button:hover {
+  background-color: rgba(117, 131, 152, 0.25);
+  cursor: pointer;
+}
+form.ng-invalid button {
+  cursor: not-allowed;
+}
+
+img {
+  font-size: 12px;
+}
