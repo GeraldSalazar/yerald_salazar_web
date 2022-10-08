@@ -1,0 +1,23 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  height: 50vh;
+}
+section div {
+  flex-basis: 50%;
+  display: flex;
+}
+section div a {
+  margin: auto;
+  color: var(--first-color);
+  text-decoration: underline;
+}
+i {
+  margin: 0.3rem;
+}
+section p {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
