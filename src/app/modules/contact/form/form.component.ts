@@ -9,6 +9,7 @@ import { FormEmailData } from './form-interface';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent {
+  loadingFlag: boolean = false;
   contactForm = new FormGroup({
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
@@ -17,10 +18,19 @@ export class FormComponent {
   });
   constructor(private emailContactForm: EmailContactFormService) {}
   submitEmail(formData: FormEmailData) {
+    this.loadingFlag = true;
     this.contactForm.reset();
-    this.emailContactForm.postEmailToAPI(formData).subscribe(res => {
-      location.href = 'https://mailthis.to/confirm';
-      console.log(res);
+    this.emailContactForm.postEmailToAPI(formData).subscribe({
+      next: res => {
+        this.loadingFlag = false;
+        if (res) {
+          location.href = 'https://mailthis.to/confirm';
+        }
+      },
+      error: e => {
+        this.loadingFlag = false;
+        console.log(e);
+      },
     });
   }
 }

@@ -41,3 +41,7 @@ form.ng-valid button:hover {
 form.ng-invalid button {
   cursor: not-allowed;
 }
+
+img {
+  font-size: 12px;
+}

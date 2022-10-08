@@ -8,5 +8,13 @@
   <input type="email" id="email" formControlName="email" />
   <label for="message">Message</label>
   <textarea type="text" id="message" formControlName="message"></textarea>
-  <button [disabled]="!contactForm.valid" type="submit">Submit</button>
+  <button [disabled]="!contactForm.valid" type="submit">
+    Submit
+    <img
+      *ngIf="loadingFlag"
+      height="auto"
+      width="25"
+      src="../../../../assets/images/spidnner.gif"
+      alt="Loading..." />
+  </button>
 </form>
