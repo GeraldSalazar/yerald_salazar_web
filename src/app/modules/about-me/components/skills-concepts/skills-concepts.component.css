@@ -1,5 +1,7 @@
 :host {
   display: flex;
+  min-height: 85vh;
+  align-items: center;
 }
 div {
   flex-basis: 50%;
@@ -8,6 +10,7 @@ article {
   background-color: var(--first-color);
   flex-basis: 50%;
   margin: 0 5rem;
+  height: auto;
   padding: 2rem;
 }
 ul {

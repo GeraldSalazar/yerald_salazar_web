@@ -1,0 +1,16 @@
+<article *ngFor="let item of experienceListItems">
+  <div class="date">
+    <p class="parag-color fs-4">{{ item.date }}</p>
+    <div id="h-line"></div>
+    <p class="parag-color fs-4">{{ item.companyType }}</p>
+  </div>
+  <div class="description">
+    <p class="title-color fs-3">{{ item.role }}</p>
+    <p
+      *ngFor="let responsability of item.responsabilities"
+      class="parag-color fs-4">
+      <i class="fa-regular fa-circle-dot"></i> {{ responsability }}
+    </p>
+  </div>
+  <div class="item-divider"></div>
+</article>
