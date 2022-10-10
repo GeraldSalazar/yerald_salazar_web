@@ -8,6 +8,13 @@ const routes: Routes = [
       import('./modules/home/home.module').then(mod => mod.HomeModule),
   },
   {
+    path: 'about',
+    loadChildren: () =>
+      import('./modules/about-me/about-me.module').then(
+        mod => mod.AboutMeModule
+      ),
+  },
+  {
     path: 'portfolio',
     loadChildren: () =>
       import('./modules/portfolio/portfolio.module').then(

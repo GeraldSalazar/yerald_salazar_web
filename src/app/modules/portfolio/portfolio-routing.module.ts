@@ -4,8 +4,16 @@ import { ProjectDetailComponent } from './components/project-detail/project-deta
 import { PortfolioComponent } from './portfolio.component';
 
 const routes: Routes = [
-  { path: '', component: PortfolioComponent },
-  { path: 'project/:id', component: ProjectDetailComponent },
+  {
+    path: '',
+    component: PortfolioComponent,
+    title: 'Yerald Salazar - Portfolio',
+  },
+  {
+    path: 'project/:id',
+    component: ProjectDetailComponent,
+    title: 'Yerald Salazar - Project',
+  },
 ];
 
 @NgModule({

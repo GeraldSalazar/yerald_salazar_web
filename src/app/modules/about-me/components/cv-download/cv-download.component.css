@@ -1,0 +1,30 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 50vh;
+}
+section div {
+  flex-basis: 50%;
+  display: flex;
+}
+section div a {
+  margin: auto;
+  color: var(--first-color);
+  text-align: center;
+  text-decoration: underline;
+}
+i {
+  margin: 0.3rem;
+}
+section p {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  section {
+    flex-direction: column;
+  }
+}

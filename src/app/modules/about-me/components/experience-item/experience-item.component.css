@@ -1,0 +1,65 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+article {
+  display: flex;
+}
+article .date {
+  flex-basis: 50%;
+  align-self: center;
+}
+i {
+  font-size: 0.75rem;
+  margin: 0.25rem;
+  color: var(--first-color);
+}
+article .description {
+  flex-basis: 50%;
+}
+article .description p {
+  text-align: justify;
+}
+article .description p:first-of-type {
+  text-decoration: underline;
+}
+
+article .date p:first-of-type {
+  text-align: end;
+  margin-right: 15%;
+}
+article .date p:last-of-type {
+  text-align: center;
+}
+#h-line {
+  height: 2px;
+  background-color: whitesmoke;
+  margin: auto;
+  position: relative;
+  width: 70%;
+}
+#h-line::after {
+  content: 'o';
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  color: var(--first-color);
+}
+
+.item-divider {
+  margin: auto;
+  position: absolute;
+  width: 85%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.23);
+}
+
+@media only screen and (max-width: 800px) {
+  article {
+    margin-top: 1.25rem;
+    flex-direction: column;
+  }
+}

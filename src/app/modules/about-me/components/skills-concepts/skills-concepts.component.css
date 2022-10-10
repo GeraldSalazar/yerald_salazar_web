@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  min-height: 85vh;
+  align-items: center;
+}
+div {
+  flex-basis: 50%;
+}
+article {
+  background-color: var(--first-color);
+  flex-basis: 50%;
+  margin: 0 5rem;
+  height: auto;
+  padding: 2rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: var(--medium-font-size);
+  font-weight: bold;
+  font-family: inter, sans-serif;
+  color: whitesmoke;
+}
+i {
+  margin: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  :host {
+    flex-direction: column;
+  }
+  article {
+    padding: 1rem;
+  }
+  li {
+    font-size: var(--small-font-size);
+  }
+}
