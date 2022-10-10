@@ -36,8 +36,7 @@ i {
     flex-direction: column;
   }
   article {
-    margin: 0;
-    padding: 0.5rem;
+    padding: 1rem;
   }
   li {
     font-size: var(--small-font-size);

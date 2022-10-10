@@ -13,6 +13,10 @@
   font-size: var(--small-font-size);
   font-family: 'inter', sans-serif;
   color: var(--sec-color);
+  cursor: pointer;
+}
+.active {
+  color: var(--first-color) !important;
 }
 
 .navbar .navbar__links li a.mobile-font-color {

@@ -17,22 +17,34 @@
     }"
     class="navbar__links flex">
     <li>
-      <a routerLink="/home" [ngClass]="{ 'mobile-font-color': shiftMenu }"
+      <a
+        data-route="home"
+        #navItem
+        [ngClass]="{ 'mobile-font-color': shiftMenu }"
         >Home</a
       >
     </li>
     <li>
-      <a routerLink="/about" [ngClass]="{ 'mobile-font-color': shiftMenu }"
+      <a
+        data-route="about"
+        #navItem
+        [ngClass]="{ 'mobile-font-color': shiftMenu }"
         >About</a
       >
     </li>
     <li>
-      <a routerLink="/portfolio" [ngClass]="{ 'mobile-font-color': shiftMenu }"
+      <a
+        #navItem
+        data-route="portfolio"
+        [ngClass]="{ 'mobile-font-color': shiftMenu }"
         >Portfolio</a
       >
     </li>
     <li>
-      <a routerLink="/contact" [ngClass]="{ 'mobile-font-color': shiftMenu }"
+      <a
+        #navItem
+        data-route="contact"
+        [ngClass]="{ 'mobile-font-color': shiftMenu }"
         >Contact</a
       >
     </li>

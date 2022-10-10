@@ -56,3 +56,10 @@ article .date p:last-of-type {
   height: 1px;
   background-color: rgba(128, 128, 128, 0.23);
 }
+
+@media only screen and (max-width: 800px) {
+  article {
+    margin-top: 1.25rem;
+    flex-direction: column;
+  }
+}
