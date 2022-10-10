@@ -8,8 +8,7 @@ import {
   ViewChildren,
 } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { CurrentTabService } from './current-tab.service';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -24,15 +23,17 @@ export class NavBarComponent implements OnInit, AfterViewInit {
   constructor(
     private breakPointsObs: BreakpointObserver,
     private renderer: Renderer2,
-    private currentTab: CurrentTabService,
     private router: Router
   ) {}
   ngOnInit() {
     this.checkMenuBreakPoint();
   }
   ngAfterViewInit(): void {
-    const index = this.currentTab.getCurrentTab();
-    this.renderer.addClass(this.navItems.get(index)?.nativeElement, 'active');
+    const index = sessionStorage.getItem('activeTab');
+    this.renderer.addClass(
+      this.navItems.get(index ? +index : 0)?.nativeElement,
+      'active'
+    );
 
     this.navItems.forEach((item, index) => {
       this.listenFunc = this.renderer.listen(
@@ -42,7 +43,7 @@ export class NavBarComponent implements OnInit, AfterViewInit {
           event.preventDefault();
           let target = event.target || event.srcElement || event.currentTarget;
           if (target) {
-            this.currentTab.setCurrentTab(index);
+            sessionStorage.setItem('activeTab', index.toString());
             this.router.navigate([target.dataset.route]);
           }
         }
