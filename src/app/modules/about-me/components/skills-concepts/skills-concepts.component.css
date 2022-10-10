@@ -27,3 +27,16 @@ li {
 i {
   margin: 0.5rem;
 }
+
+@media only screen and (max-width: 800px) {
+  :host {
+    flex-direction: column;
+  }
+  article {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  li {
+    font-size: var(--small-font-size);
+  }
+}
