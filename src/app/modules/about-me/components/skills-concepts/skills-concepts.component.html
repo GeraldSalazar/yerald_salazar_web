@@ -1,1 +1,15 @@
-<p>skills-concepts works!</p>
+<div>
+  <h2 class="title-color fs-1">My Skills and Concepts</h2>
+  <p class="parag-color fs-4">
+    Learning never stops and I am interested in stay current and keep working
+    hard to improve my skill set.
+  </p>
+</div>
+<article>
+  <ul>
+    <li *ngFor="let concept of conceptList">
+      <i class="fa-solid fa-check"></i>{{ concept }}
+      <hr />
+    </li>
+  </ul>
+</article>

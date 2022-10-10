@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+}
+div {
+  flex-basis: 50%;
+}
+article {
+  background-color: var(--first-color);
+  flex-basis: 50%;
+  margin: 0 5rem;
+  padding: 2rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: var(--medium-font-size);
+  font-weight: bold;
+  font-family: inter, sans-serif;
+  color: whitesmoke;
+}
+i {
+  margin: 0.5rem;
+}
